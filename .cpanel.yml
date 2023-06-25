@@ -1,5 +1,13 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/portopo2/public_html/gitgit.portoportoku.my.id
- - /bin cp * $DEPLOYPATH #copy all from root
+    - export DEPLOYPATH=/home/portopo2/public_html/gitgit.portoportoku.my.id/
+    - /bin/cp -R * /home/portopo2/repositories/gitgit $DEPLOYPATH
+ 
+ 
+ 
+#  ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/username/public_html/
+#     - /bin/cp -R /home/username/gitrepo/testing $DEPLOYPATH
