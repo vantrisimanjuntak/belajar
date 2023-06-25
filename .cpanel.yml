@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/portopo2/repositories/belajar
- - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
+ - export DEPLOYPATH=/home/portopo2/public_html/gitgit.portoportoku.my.id
+ - /bin cp * $DEPLOYPATH #copy all from root
